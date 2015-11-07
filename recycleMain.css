@@ -1,5 +1,5 @@
 body {
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(224,248,201,1)));
+  background: linear-gradient(-105deg, rgba(255,255,255,1.0),rgba(224,248,201,1.0));
   padding: 10px;
   font-family:
 }
@@ -24,13 +24,13 @@ body {
 }
 
 .jumbotron {
-    background-color: #000000;
-    color: white;
+    background-color: #ADD8E6;
 }
 
 .navbar-default{
-    background-color: #E3FFE3;
+    background-color:rgba(224,248,201,1.0);
     padding: 10px;
+    border-bottom-color: black;
 }
 
 .img-input > img{
