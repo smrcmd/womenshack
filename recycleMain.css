@@ -1,0 +1,23 @@
+body {
+  background-color: #ADD8E6;
+  padding: 10px;
+}
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
+.row-left {
+	text-align:left;
+}
+
+.row-right {
+	text-align:right;
+}
