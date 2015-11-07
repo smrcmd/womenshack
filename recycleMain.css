@@ -1,6 +1,7 @@
 body {
   background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(224,248,201,1)));
   padding: 10px;
+  font-family:
 }
 .row-centered {
     text-align:center;
@@ -23,12 +24,13 @@ body {
 }
 
 .jumbotron {
-    background-color: #ADD8E6;
+    background-color: #000000;
+    color: white;
 }
 
 .navbar-default{
-    background-color: #E5FFE5;
-
+    background-color: #E3FFE3;
+    padding: 10px;
 }
 
 .img-input > img{

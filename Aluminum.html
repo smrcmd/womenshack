@@ -7,12 +7,32 @@
     <![endif]-->
 
     <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="recycleMain.css">
     
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    
+
+    <script type="text/javascript">    
+      
+	var caninput = document.getElementById('caninput');
+	var foilinput = $("#foilinput").val();
+	var soupinput = $("#soupinput").val();
+	var total = 0;
+	
+	function calculate() {
+		console.log(caninput);
+		total = parseInt(caninput) + parseInt(foilinput) + parseInt(soupinput);
+		$('#totalamount').val(total);
+		alert(caninput);
+	}; 
+	
+		
+	</script>
+
+
   </head>
-
-
   <body>
       <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container pull-right">
@@ -62,7 +82,7 @@
                         <label class="can-label" for="caninput">Quantity</label>
                         <div class="row">
                             <div class="col-xs-6">
-                                <input type="number" id="caninput" class="form-control">
+                                <input type="number" id="foilinput" class="form-control">
                             </div>
                         </div>
                     </div>
@@ -77,7 +97,7 @@
                         <label class="can-label" for="caninput">Quantity</label>
                         <div class="row">
                             <div class="col-xs-6">
-                                <input type="number" id="caninput" class="form-control">
+                                <input type="number" id="soupinput" class="form-control">
                             </div>
                         </div>
                     </div>
@@ -86,16 +106,17 @@
 
         </div>
 		<div class="panel-footer">
+		<!--	<button type="btn btn-default" id="calculate" onclick="calculate();">Calculate</button> -->
 		<a href="submitConfirmation.html">
 			<input type="submit" value="Submit">
 		</a>
+			<!-- <input type="text" id="totalamount" disabled="true"> -->
 		</div>
 		</div><!--End panel div-->
 
   </body>
+  	
 
 
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
   </body>
 </html>
