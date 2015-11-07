@@ -23,8 +23,7 @@ body {
 }
 
 .jumbotron {
-	background-color: #E5FFE5;
-	text-align: center;
+    background-color: #ADD8E6;
 }
 
 .navbar-default{
@@ -32,7 +31,6 @@ body {
 
 }
 
-.can {
-	height: 200px;
-	width: 200px;
+.img-input > img{
+    max-width: 100px;
 }
