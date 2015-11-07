@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="recycleMain.css">
+    
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    
+
+    <script type="text/javascript">    
+      
+	var caninput = document.getElementById('caninput');
+	var foilinput = $("#foilinput").val();
+	var soupinput = $("#soupinput").val();
+	var total = 0;
+	
+	function calculate() {
+		console.log(caninput);
+		total = parseInt(caninput) + parseInt(foilinput) + parseInt(soupinput);
+		$('#totalamount').val(total);
+		alert(caninput);
+	}; 
+	
+		
+	</script>
+
+
+  </head>
+  <body>
+      <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container pull-right">
+        <div class="dropdown navbar-right">
+          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            Where to?
+          <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li><a href="recycleMain.html">Home</a></li>
+            <li><a href="joinChallenge.html">Join A Challenge</a></li>
+            <li><a href="currentChallenge.html">Current Challenges</a></li>
+            <li><a href="personalGoals.html">Personal Goals</a></li>
+            <li><a href="helpfulLinks.html">Helpful Links</a></li>
+          </ul>
+        </div>
+      </div> <!--End container div-->
+    </nav>
+    <div class="jumbotron">
+  		<h1 class="row-centered">Current Challenges</h1>
+    </div> <!-- End jumbotron div-->
+    
+    <div class="panel panel-default">
+        <div class="row">
+    	<div class="panel-body">
+            <div class="col-sm-6 col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="img-input">
+                            <img class="pull-right" src="brianda.jpg"<!--Switch Pciture -->
+                        </div>
+                        <label class="can-label" for="caninput">Brianda</label>
+                        <div class="row">
+                            <div class="col-xs-6">
+                             Aluminum = 50% <br/>
+							 Plastic = 10% <br/>
+							 Glass = 5%   <br/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--end of col 1-->
+            <div class="col-sm-6 col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="img-input">
+                            <img class="pull-right" src="jamie.jpg">
+                        </div>
+                        <label class="can-label" for="caninput">Jamie</label>
+                        <div class="row">
+                            <div class="col-xs-6">
+                             Aluminum = 35% <br/>
+							 Plastic = 45% <br/>
+							 Glass = 10%    <br/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--end of col 2-->
+            <div class="col-sm-6 col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="img-input">
+                            <img class="pull-right" src="phil.jpg">
+                        </div>
+                        <label class="can-label" for="caninput">Phil</label>
+                        <div class="row">
+                            <div class="col-xs-6">
+                                Aluminum = 45% <br/>
+								Plastic = 45% <br/>
+								Glass = 1%  <br/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--end of col 3-->
+
+        </div>
+		
+		</div><!--End panel div-->
+
+  </body>
+  	
+
+
+  </body>
+</html>
