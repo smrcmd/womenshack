@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="recycleMain.css">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+
+    <script type="text/javascript">
+
+        var caninput = document.getElementById('caninput');
+        var foilinput = $("#foilinput").val();
+        var soupinput = $("#soupinput").val();
+        var total = 0;
+
+        function calculate() {
+            console.log(caninput);
+            total = parseInt(caninput) + parseInt(foilinput) + parseInt(soupinput);
+            $('#totalamount').val(total);
+            alert(caninput);
+        };
+
+
+    </script>
+
+
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container pull-right">
+        <div class="dropdown navbar-right">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                Where to?
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a href="recycleMain.html">Home</a></li>
+                <li><a href="#">Join A Challenge</a></li>
+                <li><a href="GroupChallenge.html">Current Challenges</a></li>
+                <li><a href="submitConfirmation.html">Personal Goals</a></li>
+                <li><a href="#">Helpful Links</a></li>
+            </ul>
+        </div>
+    </div> <!--End container div-->
+</nav>
+<div class="jumbotron">
+    <h1 class="row-centered">PAPER</h1>
+</div> <!-- End jumbotron div-->
+
+<div class="panel panel-default">
+    <div class="row">
+        <div class="panel-body">
+            <div class="col-sm-6 col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="img-input">
+                            <img class="pull-right" src="news_papers.png">
+                        </div>
+                        <label class="can-label" for="caninput">Quantity</label>
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <input type="number" id="caninput" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--end of col 1-->
+            <div class="col-sm-6 col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="img-input">
+                            <img class="pull-right" src="docs_pile.png">
+                        </div>
+                        <label class="can-label" for="caninput">Quantity</label>
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <input type="number" id="foilinput" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--end of col 2-->
+            <div class="col-sm-6 col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="img-input">
+                            <img class="pull-right" src="Lifes-A-Beach-Pile.png">
+                        </div>
+                        <label class="can-label" for="caninput">Quantity</label>
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <input type="number" id="soupinput" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--end of col 3-->
+
+        </div>
+        <div class="panel-footer">
+            <!--	<button type="btn btn-default" id="calculate" onclick="calculate();">Calculate</button> -->
+            <a href="submitConfirmation.html">
+                <input type="submit" value="Submit">
+            </a>
+            <!-- <input type="text" id="totalamount" disabled="true"> -->
+        </div>
+    </div><!--End panel div-->
+
+</body>
+
+
+
+</body>
+</html>
