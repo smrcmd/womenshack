@@ -22,11 +22,10 @@ body {
 	text-align:right;
 }
 
-.navbar {
-	background-color: #000000;	
-	padding: 10px;
-}
-
 .jumbotron {
 	background-color: #ADD8E6;
+
+.navbar-default{
+    background-color: #000;
+
 }
